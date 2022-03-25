@@ -1,0 +1,208 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+.jumbotron{
+  margin: 0 !important;
+}
+
+.navbar-gorehco {
+  background-color: #044ba2;
+  border-color: #080808;
+}
+.navbar-gorehco .navbar-brand {
+  color: white;
+}
+.navbar-gorehco .navbar-brand:hover,
+.navbar-gorehco .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-gorehco .navbar-text {
+  color: #9d9d9d;
+}
+.navbar-gorehco .navbar-nav > li > a {
+  color: white;
+}
+.navbar-gorehco .navbar-nav > li > a:hover,
+.navbar-gorehco .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-gorehco .navbar-nav > .active > a,
+.navbar-gorehco .navbar-nav > .active > a:hover,
+.navbar-gorehco .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+.navbar-gorehco .navbar-nav > .disabled > a,
+.navbar-gorehco .navbar-nav > .disabled > a:hover,
+.navbar-gorehco .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+.navbar-gorehco .navbar-toggle {
+  border-color: #333;
+}
+.navbar-gorehco .navbar-toggle:hover,
+.navbar-gorehco .navbar-toggle:focus {
+  background-color: #333;
+}
+.navbar-gorehco .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-gorehco .navbar-collapse,
+.navbar-gorehco .navbar-form {
+  border-color: #101010;
+}
+.navbar-gorehco .navbar-nav > .open > a,
+.navbar-gorehco .navbar-nav > .open > a:hover,
+.navbar-gorehco .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+@media (max-width: 767px) {
+  .navbar-gorehco .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #080808;
+  }
+  .navbar-gorehco .navbar-nav .open .dropdown-menu .divider {
+    background-color: #080808;
+  }
+  .navbar-gorehco .navbar-nav .open .dropdown-menu > li > a {
+    color: #9d9d9d;
+  }
+  .navbar-gorehco .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-gorehco .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+  }
+  .navbar-gorehco .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-gorehco .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-gorehco .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #080808;
+  }
+  .navbar-gorehco .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-gorehco .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-gorehco .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #444;
+    background-color: transparent;
+  }
+}
+.navbar-gorehco .navbar-link {
+  color: #9d9d9d;
+}
+.navbar-gorehco .navbar-link:hover {
+  color: #fff;
+}
+.navbar-gorehco .btn-link {
+  color: #9d9d9d;
+}
+.navbar-gorehco .btn-link:hover,
+.navbar-gorehco .btn-link:focus {
+  color: #fff;
+}
+.navbar-gorehco .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-gorehco .btn-link:hover,
+.navbar-gorehco .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-gorehco .btn-link:focus {
+  color: #444;
+}
+.jumbotron {
+  background: #808080 !important;
+  color: #fff;
+  padding: 20px 0;
+}
+/*body {
+  background-image: url('img/logoNegro.webp');
+  background-repeat: no-repeat;
+  background-size: 59%;
+  background-position-x: center;
+  background-position-y: center;
+  background-attachment: fixed;
+}*/
+.panel{
+  background-color: #ffffffc7;
+}
+.form-control{background-color: #ffffffcc !important;}
+
+
+.badge-default.badge {
+  color: #f5f5f5;
+  background-color: #333;
+}
+.badge-primary.badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+.badge-success.badge {
+  color: #dff0d8;
+  background-color: #3c763d;
+}
+.badge-info.badge {
+  color: #d9edf7;
+  background-color: #31708f;
+}
+.badge-warning.badge {
+  color: #fcf8e3;
+  background-color: #f0ad4e;
+}
+.badge-danger.badge {
+  color: #ffffff;
+  background-color: #d9534f;
+}
+
+.document-editor {
+  border: 1px solid var(--ck-color-base-border);
+  border-radius: var(--ck-border-radius);
+
+  /* Set vertical boundaries for the document editor. */
+  height: 700px;
+
+  /* This element is a flex container for easier rendering. */
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.document-editor__toolbar {
+  /* Make sure the toolbar container is always above the editable. */
+  z-index: 1;
+
+  /* Create the illusion of the toolbar floating over the editable. */
+  box-shadow: 0 0 5px hsla( 0,0%,0%,.2 );
+
+  /* Use the CKEditor CSS variables to keep the UI consistent. */
+  border-bottom: 1px solid var(--ck-color-toolbar-border);
+}
+
+/* Adjust the look of the toolbar inside the container. */
+.document-editor__toolbar .ck-toolbar {
+  border: 0;
+  border-radius: 0;
+}
+/* Make the editable container look like the inside of a native word processor application. */
+.document-editor__editable-container {
+  padding: calc( 2 * var(--ck-spacing-large) );
+  background: var(--ck-color-base-foreground);
+
+  /* Make it possible to scroll the "page" of the edited content. */
+  overflow-y: scroll;
+}
+
+.document-editor__editable-container .ck-editor__editable {
+  /* Set the dimensions of the "page". */
+  width: 15.8cm;
+  min-height: 21cm;
+
+  /* Keep the "page" off the boundaries of the container. */
+  padding: 1cm 2cm 2cm;
+
+  border: 1px hsl( 0,0%,82.7% ) solid;
+  border-radius: var(--ck-border-radius);
+  background: white;
+
+  /* The "page" should cast a slight shadow (3D illusion). */
+  box-shadow: 0 0 5px hsla( 0,0%,0%,.1 );
+
+  /* Center the "page". */
+  margin: 0 auto;
+}
+@import "node_modules/toastr/toastr.scss";
+

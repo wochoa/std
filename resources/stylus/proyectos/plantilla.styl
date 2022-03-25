@@ -1,0 +1,39 @@
+html
+    overflow-y: auto !important
+.v-data-table__wrapper
+    overflow: initial !important
+.Proyectos
+    &-container
+        margin-right: 15px
+        margin-left: 15px
+        height: calc(100vh - 48px);
+    .Menu
+        a
+            &:focus
+            &:hover
+                text-decoration none
+    a
+        &:focus
+        &:hover
+            text-decoration none
+.Tabulador
+    /* border-left: 2px solid #1976d2
+    border-right: 2px solid #1976d2
+    border-bottom: 2px solid #1976d2 */
+
+.Modal
+    &Filtros 
+        display flex
+        align-items: baseline
+
+@media screen and (min-width 1400px)
+    .Proyectos
+        &-container
+            max-width 1280px
+            margin-left: auto
+            margin-right: auto
+@media screen and (min-width 1904px)
+    .Proyectos
+        &-container
+            max-width 1785px
+    

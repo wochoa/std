@@ -1,0 +1,78 @@
+.Listado
+    display flex
+    flex-direction column
+    height 100%
+
+    &Filtros
+        //background-color cyan  
+    &Acciones
+        display flex
+        justify-content space-between
+        .v-pagination
+            justify-content flex-end
+            width auto
+            li
+                height auto
+        .v-pagination__item
+        .v-pagination__navigation
+            height auto
+            font-size initial
+        .v-btn
+            margin 0 5px
+    &Tabla
+        outline 0
+        table
+            border 1px solid #ddd
+            border-collapse collapse
+            table-layout fixed
+        thead
+            background-color #dfdfdf
+            display block
+            width calc(100% - 1.2em) !important
+        tbody
+            display block
+            height calc(100vh - 166px)
+            overflow-y scroll
+        tr
+            display table
+            width 100%
+            table-layout fixed
+            outline 0
+            cursor hand
+            cursor pointer
+        td, th 
+            white-space pre-line
+            border 1px solid #ddd
+            padding 0px 3px !important
+
+        .v-messages
+            min-height 0
+        .v-input
+            margin-top 0
+.estatico
+    tbody
+        height auto
+        max-height: 100vh
+        min-height: 100px
+
+.ProyectosFormulario
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding 5px 15px
+    label
+        width: 200px
+        margin-left: 10px
+        margin-right: 30px
+    .v-text-field
+        padding-top:  0
+        margin-top: 0
+    .v-input__slot
+        border: solid 1px #a4a4a4
+        box-shadow: none !important
+        padding: 0 !important
+        min-height: 15px
+        width: 100%
+    .v-input__slot
+    .v-text-field__details
+        margin-bottom: 0 !important

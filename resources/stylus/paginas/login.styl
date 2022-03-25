@@ -1,0 +1,43 @@
+ALTO = 50px
+
+.Login
+    height calc(100vh - 50px)
+    min-height 455px
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    .panel
+        max-width 400px
+        width 100%
+    &Logo
+        width 100% 
+        height auto
+    &Group
+        display flex
+        align-items center
+        margin 0 15px
+        input
+            margin-left 15px
+        .glyphicon
+            font-size 20px
+            color #4b4b4c
+    &Actions 
+        display flex
+        justify-content space-evenly
+    &Button
+        &:hover
+            transform scale(1.2)
+.Navbar
+    background-color #044ba2
+    &-wrapper
+        margin 0 15px
+        max-width 1500px
+        display flex
+        justify-content space-between
+        align-items center
+        height ALTO
+    &Search
+        display flex
+        max-width 250px
+        float right 

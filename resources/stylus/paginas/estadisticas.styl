@@ -1,0 +1,98 @@
+.v-tabs
+    .v-tab--active
+        background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%)
+        color: white
+.v-toolbar__title
+    transition: all 0.02s
+.Filtros
+    margin 1px 1px
+    background-color: white
+    border: 1px solid #cacbcc
+    padding: 5px 15px 
+    border-radius: 40px
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)
+    z-index: 6 !important
+    transition: all 0.05s
+    &Grupo
+        padding: 0 10px !important
+        display: flex
+        align-items: center
+        label 
+            font-weight: bold
+            color  #4c4c4c
+            margin-right: 5px
+            margin-bottom: 0
+    &Input
+        margin-top: 0 !important
+        padding-top: 0 !important
+        .v-input__slot
+            margin-bottom: 0
+        .v-input__slot
+        .v-text-field__slot
+            &:before
+                border-color: rgba(21, 101, 192, 0.2) !important
+            &:after
+                border-color: #1565c0 !important
+        .v-text-field__details
+        .v-messages
+            min-height: 0
+body.tieneFiltros
+    .v-toolbar__title
+        display: none
+    .FiltrosEstatico
+        border-width: 0
+        padding-right: 0
+        padding-left: 0
+        top: 50px
+        
+        .FiltrosGrupo
+            label 
+                color  #4c4c4c !important
+        .FiltrosInput
+            input
+            .v-select__selection
+            .v-icon
+                color  #4c4c4c!important
+                caret-color: #4c4c4c !important
+            .v-input__slot
+                &:before
+                    border-color: rgba(21, 101, 192, 0.2) !important
+                &:after
+                    border-color: #1565c0 !important
+
+.card
+    margin-top: 5px
+
+@media screen and (min-width: 768px)
+    .Filtros
+        &Grupo
+            + .FiltrosGrupo
+                border-left: 2px solid #cacbcc
+
+    body.tieneFiltros
+        .FiltrosEstatico
+            background-color: transparent
+            box-shadow: none
+            top: 4px
+            .FiltrosGrupo
+                label 
+                    color  #fff !important
+                + .FiltrosGrupo
+                    border-left: 2px solid #cacbcc
+            .FiltrosInput
+                input
+                .v-select__selection
+                .v-icon
+                    color  #fff !important
+                    caret-color: #fff !important
+                .v-input__slot
+                    &:before
+                        border-color: rgba(255, 255, 255, 0.2) !important
+                    &:after
+                        border-color: #fff !important
+
+@media screen and (max-width: 1400px)
+    body.tieneFiltros
+        .FiltrosEstatico
+            margin-right: 50px
+            margin-left: 40px
